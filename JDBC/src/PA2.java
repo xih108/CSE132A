@@ -18,7 +18,7 @@ public class PA2 {
 
         try {
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:pa22.db");
+            conn = DriverManager.getConnection("jdbc:sqlite:pa2.db");
             System.out.println("Opened database successfully.");
             Statement stmt = conn.createStatement();
             stmt.executeUpdate("DROP TABLE if EXISTS Connected;");
